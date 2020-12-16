@@ -19,7 +19,7 @@ const { config } = require('./config');
 
 var client_id = config.clientID; // Your client id
 var client_secret = config.clientSecret; // Your secret
-var redirect_uri = 'http://localhost:3000/callback'; // Your redirect uri
+var redirect_uri = 'http://localhost:1410/callback'; // Your redirect uri
 
 /**
  * Generates a random string containing numbers and letters
@@ -159,6 +159,6 @@ app.get('/refresh_token', function (req, res) {
 	});
 });
 
-app.listen(process.env.PORT || 3000, function () {
-	console.log('Server is running on port 3000');
+app.listen(process.env.PORT || 1410, function () {
+	console.log('Server is running on port 1410');
 });
